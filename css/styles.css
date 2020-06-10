@@ -1,0 +1,227 @@
+/* Палитра фон */
+/* цвет фона хэдэра #FFFFFF */
+/* основной цвет фона #E5E5E5 */
+/* цвет фона иконок секции преимущества и секции наша команда #F5F4FA  */
+/* цвет фона заливки надписей секции чем мы занимаемся rgba(47, 48, 58, 0.8) */
+/* цвет фона футера #2F303A */
+
+/* Палитра текст */
+/* цвет акцента и заливки кнопок (синий) #2196F3 */
+/* черный #000000 */
+/* светло черный #212121 */
+/* серый #757575 */
+/* белый #FFFFFF */
+/* электронка, телефон, имейл, подпись в футере rgba(255, 255, 255, 0.6) */
+
+:root {
+  --white: #ffffff;
+  --dark-white: #e5e5e5;
+  --grey: #f5f4fa;
+  --dark-grey: rgba(47, 48, 58, 0.8);
+  --dark-grey-footer: #2f303a;
+  --primery-text-color: #212121;
+  --accent-color: #2196f3;
+  --black: #000000;
+  --grey-text: #757575;
+  --conacts-color: rgba(255, 255, 255, 0.6);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--dark-white);
+  color: var(--primery-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Стили страницы Студия (хэдер, футэр общие) */
+
+/* Хэдэр */
+header {
+  background-color: var(--white);
+}
+
+.logo-web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-studio {
+  color: var(--black);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+}
+.site-nav .link {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.outh-nav .link {
+  color: var(--grey-text);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+.outh-nav .link:hover,
+.outh-nav .link:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero-title {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Hero-footer-button */
+.primary-button {
+  color: var(--white);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Преимущества */
+.advantages-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+}
+.advantages-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-text {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.71x;
+}
+
+/* Чем мы занимаемся */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+}
+.work-name {
+  color: var(--white);
+  background-color: var(--dark-grey);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--grey);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-function {
+  color: var(--grey-text);
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Футер */
+.adress .map {
+  color: var(--white);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress .link {
+  color: var(--conacts-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress .link:hover,
+.adress .link:focus {
+  color: var(--accent-color);
+}
+.contacts {
+  background-color: var(--dark-grey-footer);
+}
+
+.invitation {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14x;
+  text-transform: uppercase;
+}
+.signature {
+  color: var(--conacts-color);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Стили страницы Портфолио */
+
+.secondary-button {
+  background-color: var(--grey);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.portfolio-name {
+  color: var(--primery-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-item {
+  color: var(--grey-text);
+  font-size: 16px;
+  line-height: 1.87;
+}
+.portfolio-text {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.56;
+}
