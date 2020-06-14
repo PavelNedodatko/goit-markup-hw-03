@@ -25,8 +25,18 @@
   --grey-text: #757575;
   --conacts-color: rgba(255, 255, 255, 0.6);
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inher;
+}
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -87,12 +97,17 @@ header {
   color: var(--accent-color);
 }
 /* Герой */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -105,32 +120,65 @@ header {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+}
+.container {
+  margin-top: 94px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1430px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-with-paddings {
+  margin-top: 94px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1600px;
+  padding-right: 215px;
+  padding-left: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Преимущества */
 .advantages-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
+  display: none;
 }
 .advantages-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 .advantages-text {
   color: var(--grey-text);
   font-size: 14px;
   line-height: 1.71x;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /* Чем мы занимаемся */
 .work-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50;
 }
 .work-name {
   color: var(--white);
@@ -139,6 +187,9 @@ header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 370px;
 }
 
 /* Наша команда */
@@ -148,20 +199,41 @@ header {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 50px;
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .team-function {
   color: var(--grey-text);
+  margin-block-start: 10px;
+  margin-block-end: 0px;
 
   font-size: 16px;
   line-height: 1.19;
+}
+
+.social-links {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+/* Постоянные киенты */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-block-end: 50px;
+  margin-block-start: 0px;
 }
 
 /* Футер */
@@ -198,6 +270,14 @@ header {
   line-height: 2;
   text-align: center;
 }
+.btn-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-color: var(--white);
+  vertical-align: middle;
+}
 
 /* Стили страницы Портфолио */
 
@@ -207,6 +287,16 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+  margin-bottom: 34px;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
 }
 .portfolio-name {
   color: var(--primery-text-color);
@@ -214,11 +304,16 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 .portfolio-item {
   color: var(--grey-text);
   font-size: 16px;
   line-height: 1.87;
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 0px;
 }
 .portfolio-text {
   color: var(--white);
