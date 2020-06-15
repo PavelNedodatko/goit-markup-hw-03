@@ -17,30 +17,36 @@
   <body>
     <!-- Шапка страницы -->
     <header>
-      <nav class="container">
-        <a href="./">
-          <span class="logo-web">Web </span>
-          <span class="logo-studio">Studio</span>
-        </a>
-        <ul class="site-nav list">
-          <li><a href="./" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-        <address>
+      <nav class="container main-nav">
+        <div class="logo">
+          <a href="./">
+            <span class="logo-web">Web </span>
+            <span class="logo-studio">Studio</span>
+          </a>
+        </div>
+        <div class="site-nav">
+          <ul class="site-nav list">
+            <li class="item"><a href="./" class="link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- <address> -->
+        <div class="outh-nav">
           <ul class="outh-nav list">
-            <li>
-              <img src="./img/envelope.svg" alt="письмо" />
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <img src="./img/smartphone.svg" alt="смартфон" />
+            <li class="item">
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>
-        </address>
+        </div>
+        <!-- </address> -->
       </nav>
     </header>
     <!-- Основной контент страницы -->
@@ -59,16 +65,18 @@
       <section class="advantages">
         <div class="container">
           <h2 class="advantages-title">Преимущества</h2>
-          <ul>
-            <li>
-              <img src="./img/antenna_1.svg" alt="антенна" />
+          <ul class="advantages-list">
+            <li class="item">
+              <div class="advantages-image">
+                <img src="./img/antenna_1.svg" alt="антенна" />
+              </div>
               <h3 class="advantages-name">Внимание к деталям</h3>
               <p class="advantages-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img src="./img/clock_1.svg" alt="часы" />
               <h3 class="advantages-name">Пунктуальность</h3>
               <p class="advantages-text">
@@ -76,7 +84,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img src="./img/diagram_1.svg" alt="диаграмма" />
               <h3 class="advantages-name">Планирование</h3>
               <p class="advantages-text">
@@ -84,7 +92,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img src="./img/astronaut_1.svg" alt="астронавт" />
               <h3 class="advantages-name">Современные технологии</h3>
               <p class="advantages-text">
@@ -99,16 +107,16 @@
       <section class="work">
         <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
-          <ul>
-            <li>
+          <ul class="work-list">
+            <li class="item">
               <img src="./img/notebook.jpg" alt="ноутбук" />
               <h3 class="work-name">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./img/iphone.jpg" alt="айфон" />
               <h3 class="work-name">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./img/monitor.jpg" alt="монитор" />
               <h3 class="work-name">Дизайнерские решения</h3>
             </li>
@@ -119,57 +127,41 @@
       <section class="team">
         <div class="container-with-paddings">
           <h2 class="team-title">Наша команда</h2>
-          <ul>
-            <li>
-              <img src="./img/John_Smith.jpg" alt="Фото Джона Смита" />
-              <h3 class="team-name">John Smith</h3>
+          <ul class="team-list">
+            <li class="item">
+              <img src="./img/John_Smith.jpg" alt="Фото Николая Кучеренко" />
+              <h3 class="team-name">Николай Кучеренко</h3>
               <p class="team-function">Product Designer</p>
-              <img src="./img/instagram.svg" alt="логотип инстаграм" />
               <a href="" class="social-links">Instagram</a>
-              <img src="./img/twitter.svg" alt="логотип твиттер" />
               <a href="" class="social-links">Twitter</a>
-              <img src="./img/facebook.svg" alt="логотип фэйсбук" />
               <a href="" class="social-links">Facebook</a>
-              <img src="./img/linkedin.svg" alt="логотип линкедин" />
               <a href="" class="social-links">Linkedin</a>
             </li>
-            <li>
-              <img src="./img/Marta_Stewart.jpg" alt="Фото Марты Стюарт" />
-              <h3 class="team-name">Marta Stewart</h3>
+            <li class="item">
+              <img src="./img/Marta_Stewart.jpg" alt="Фото Ольги Ивановой" />
+              <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-function">Frontend Developer</p>
-              <img src="./img/instagram.svg" alt="логотип инстаграм" />
               <a href="" class="social-links">Instagram</a>
-              <img src="./img/twitter.svg" alt="логотип твиттер" />
               <a href="" class="social-links">Twitter</a>
-              <img src="./img/facebook.svg" alt="логотип фэйсбук" />
               <a href="" class="social-links">Facebook</a>
-              <img src="./img/linkedin.svg" alt="логотип линкедин" />
               <a href="" class="social-links">Linkedin</a>
             </li>
-            <li>
-              <img src="./img/Robert_Jakis.jpg" alt="Фото Роберта Джакиса" />
-              <h3 class="team-name">Robert Jakis</h3>
+            <li class="item">
+              <img src="./img/Robert_Jakis.jpg" alt="Фото Андрея Шевченко" />
+              <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-function">Marketing</p>
-              <img src="./img/instagram.svg" alt="логотип инстаграм" />
               <a href="" class="social-links">Instagram</a>
-              <img src="./img/twitter.svg" alt="логотип твиттер" />
               <a href="" class="social-links">Twitter</a>
-              <img src="./img/facebook.svg" alt="логотип фэйсбук" />
               <a href="" class="social-links">Facebook</a>
-              <img src="./img/linkedin.svg" alt="логотип линкедин" />
               <a href="" class="social-links">Linkedin</a>
             </li>
-            <li>
-              <img src="./img/Martin_Doe.jpg" alt="Фото Мартина Доуи" />
-              <h3 class="team-name">Martin Doe</h3>
+            <li class="item">
+              <img src="./img/Martin_Doe.jpg" alt="Фото Ивана Николаева" />
+              <h3 class="team-name">Иван Николаев</h3>
               <p class="team-function">UI Designer</p>
-              <img src="./img/instagram.svg" alt="логотип инстаграм" />
               <a href="" class="social-links">Instagram</a>
-              <img src="./img/twitter.svg" alt="логотип твиттер" />
               <a href="" class="social-links">Twitter</a>
-              <img src="./img/facebook.svg" alt="логотип фэйсбук" />
               <a href="" class="social-links">Facebook</a>
-              <img src="./img/linkedin.svg" alt="логотип линкедин" />
               <a href="" class="social-links">Linkedin</a>
             </li>
           </ul>
@@ -179,27 +171,29 @@
       <section class="clients">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
-          <ul>
-            <li>
+          <ul class="clients-list">
+            <li class="item">
               <img src="./img/company_1_ya_&_co.svg" alt="Компания Я и Ко" />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./img/company_2_tag_line_hear.svg"
                 alt="Компания Таг лайн Хиа"
               />
             </li>
-            <li><img src="./img/company_3.svg" alt="Компания 3" /></li>
-            <li>
+            <li class="item">
+              <img src="./img/company_3.svg" alt="Компания 3" />
+            </li>
+            <li class="item">
               <img
                 src="./img/company_4_Foster_Peters.svg"
                 alt="Компания Фостер Петерс"
               />
             </li>
-            <li>
+            <li class="item">
               <img src="./img/company_5_brand.svg" alt="Компания Брэнд" />
             </li>
-            <li>
+            <li class="item">
               <img src="./img/company_6_tag_line.svg" alt="Компания Тэг Лайн" />
             </li>
           </ul>
@@ -208,36 +202,43 @@
     </main>
     <!-- Подвал страницы-->
     <footer class="contacts">
-      <a href="./">
-        <span class="logo-web">Web </span>
-        <span class="logo-studio">Studio</span>
-      </a>
-      <address>
-        <ul class="adress">
-          <li><a href="" class="map">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li>
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-      <section>
-        <h2 class="invitation">присоединяйтесь</h2>
-        <img src="./img/instagram.svg" alt="логотип инстаграм" />
-        <a href="">Instagram</a>
-        <img src="./img/twitter.svg" alt="логотип твиттер" />
-        <a href="">Twitter</a>
-        <img src="./img/facebook.svg" alt="логотип фэйсбук" />
-        <a href="">Facebook</a>
-        <img src="./img/linkedin.svg" alt="логотип линкедин" />
-        <a href="">Linkedin</a>
-        <a href="" class="primary-button">
-          Подписаться<span class="btn-icon"></span
-        ></a>
-        <img src="./img/icon_send.svg" alt="бумажный самолет" />
-      </section>
+      <div class="footer-position">
+        <div class="adress-info">
+          <a href="./">
+            <span class="logo-web">Web </span>
+            <span class="logo-studio-footer">Studio</span>
+          </a>
+          <address>
+            <ul class="adress">
+              <li>
+                <a href="" class="map">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="link"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <section>
+          <div class="social-invintation">
+            <h2 class="invitation">присоединяйтесь</h2>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+            <a href="">Linkedin</a>
+          </div>
+        </section>
+        <div class="sign-up">
+          <a href="" class="primary-button">
+            Подписаться<span class="btn-icon"></span
+          ></a>
+        </div>
+      </div>
       <h2 class="signature">2020 | Developed by GoIT Students</h2>
     </footer>
   </body>
