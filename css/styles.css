@@ -176,7 +176,7 @@ header {
   min-width: 200px;
 }
 .container {
-  margin-top: 94px;
+  padding-top: 94px;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
@@ -188,7 +188,7 @@ header {
   margin-left: 30px;
 }
 
-.container-with-paddings {
+.container-team {
   margin-top: 94px;
   margin-bottom: 0;
   margin-right: auto;
@@ -200,7 +200,21 @@ header {
   padding-bottom: 94px;
 }
 
-.container-with-paddings .item + .item {
+.container-team .item + .item {
+  margin-left: 30px;
+}
+
+.container-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-clients .item + .item {
   margin-left: 30px;
 }
 
@@ -366,6 +380,7 @@ header {
   font-size: 12px;
   line-height: 2;
   text-align: center;
+  padding-top: 18px
   padding-bottom: 21px;
 }
 .btn-icon {
@@ -379,7 +394,6 @@ header {
 
 .footer-position {
   display: flex;
-  margin-top: 94px;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
@@ -400,6 +414,15 @@ header {
 .sign-up {
   margin-top: 65px;
   margin-left: auto;
+}
+
+.signature-border {
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+
+
 }
 
 /* Стили страницы Портфолио */
@@ -444,8 +467,8 @@ header {
 }
 
 .portfolio-container {
-  margin-top: 50px;
-  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 94px;
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
